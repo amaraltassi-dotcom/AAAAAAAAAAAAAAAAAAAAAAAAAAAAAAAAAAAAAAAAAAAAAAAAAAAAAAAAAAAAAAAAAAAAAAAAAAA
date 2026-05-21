@@ -3,14 +3,14 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    //Matriz, componentes da matriz, c È a casa que vai jogar e confirmaÁ„o È l· no final
+    //Matriz, componentes da matriz, c √© a casa que vai jogar e confirma√ß√£o √© l√° no final
     int m[3][3], i, j, c, confirmacao;
 
-    //Aqui È loop do baraguenedisdjohnson
+    //Aqui √© loop do baraguenedisdjohnson
     do {
     int jogadas = 0;
 
-    //isso daqui È pra economizar espaÁo, mas È pra matriz ser 123456789
+    //isso daqui √© pra economizar espa√ßo, mas √© pra matriz ser 123456789
     int a = 1;
     for(i = 0; i < 3; i++)
         {
@@ -19,6 +19,7 @@ int main()
             m[i][j] = a++;
             }
         }
+        
     //Primeira bizoiada na matriz
     for(i=0;i<3;i++)
         {
@@ -30,27 +31,27 @@ int main()
         }
     printf("\n");
 
-    //Aqui È o loop dentro de um jogo do barmenedyjoelson
+    //Aqui √© o loop dentro de um jogo do barmenedyjoelson
     while (jogadas < 9) {
 
-    //Frescuraiada, mas È legal ter esses 2,bem supimpa
+    //Frescuraiada, mas √© legal ter esses 2, bem supimpa
     int jogador = (jogadas % 2) + 1;
     int simbolo = (jogador == 1) ? 0 : 999;
 
     printf("Vez do jogador %d: ", jogador);
     scanf("%d", &c);
 
-    //Isso daqui È a parte carnuda que coloca os birinelson no valor da casa
+    //Isso daqui √© a parte carnuda que coloca os birinelson no valor da casa
     switch(c)
     {
-        //FÛrmulas bem doidonas que funcionam, isso foi a ˙nica coisa que eu copiei de IA porque economiza um espaÁo do kct
+        //F√≥rmulas bem doidonas que funcionam, isso foi a √∫nica coisa que eu copiei de IA porque economiza um espa√ßo do kct
         case 1 ... 9:
         i = (c - 1) / 3;
         j = (c - 1) % 3;
 
-        //N„o pode ter 2 barriguesonnons em 1 barisjohnnis
+        //N√£o pode ter 2 barriguesonnons em 1 barisjohnnis
         if(m[i][j] == 0 || m[i][j] == 999){
-        printf("\nPode n„o, chefia\n");
+        printf("\nPode n√£o man\n");
         } else {
         m[i][j] = simbolo;
         jogadas++;
@@ -59,7 +60,7 @@ int main()
         break;
 
         default:
-          printf("\nInv·lido\n");
+          printf("\nInv√°lido\n");
 
     }
     printf("\n");
@@ -76,8 +77,8 @@ int main()
     printf("\n");
     }
 
-    //Depois de 9 jogadas, acabou o espaÁo, cai pra continuar ou n„o
-    printf("Acabou! Continuar? 1 - Sim; 0 - N„o\n");
+    //Depois de 9 jogadas, acabou o espa√ßo, cai pra continuar ou n√£o
+    printf("Acabou! Continuar? 1 - Sim; 0 - N√£o\n");
     scanf("%d", &confirmacao);
 } while(confirmacao == 1);
 }
