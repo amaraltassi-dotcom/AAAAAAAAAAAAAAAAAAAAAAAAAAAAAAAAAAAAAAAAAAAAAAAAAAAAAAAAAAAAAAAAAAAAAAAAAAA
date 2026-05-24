@@ -114,6 +114,18 @@ int main()
                     if(m[i][j] == 'X' || m[i][j] == 'O')
                     {
                         printf("\nPode não man\n");
+                        printf("\n");
+                        for(i = 0; i < 3; i++)
+                        {
+                            for(j = 0; j < 3; j++)
+                            {
+                                printf(" %c \t", m[i][j]);
+                            }
+
+                            printf("\n");
+                        }
+
+            printf("\n");
                     }
                     else
                     {
@@ -121,6 +133,15 @@ int main()
                         jogadas++;
 
                         printf("\n");
+                        for(i = 0; i < 3; i++)
+                        {
+                            for(j = 0; j < 3; j++)
+                            {
+                                printf(" %c \t", m[i][j]);
+                            }
+
+                            printf("\n");
+                        }
                         printf("\n");
 
                         // Ele printa quem venceu e adiciona a pontuação
