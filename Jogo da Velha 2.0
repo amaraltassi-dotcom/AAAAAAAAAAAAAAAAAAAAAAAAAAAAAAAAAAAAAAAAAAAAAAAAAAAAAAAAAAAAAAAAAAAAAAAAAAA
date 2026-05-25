@@ -175,22 +175,9 @@ int main()
                 default:
                     printf("\nInválido\n");
             }
-            
-            printf("\n");
-                        for(i = 0; i < 3; i++)
-                        {
-                            for(j = 0; j < 3; j++)
-                            {
-                                printf(" %c \t", m[i][j]);
-                            }
-
-                            printf("\n");
-                        }
-
-            printf("\n");
         }
        
-        printf("Acabou! Continuar?\n\n");
+        printf("Continuar jogo?\n\n");
         printf("1 - Sim\n");
         printf("0 - Não\n\n");
 
