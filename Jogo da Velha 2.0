@@ -48,12 +48,12 @@ int main()
     printf("Coloque o nome do Jogador 1: \n");
     scanf("%s", &n1);
     printf("\nColoque o nome do Jogador 2: \n");
-    scanf("%s", &n2);
-    printf("\nColoque quem começa: %s(1) ou %s(2) \n", n1, n2);
-    scanf("%d", &comeco);
+    scanf("%s", &n2):
 
     do
     {
+        printf("\nColoque quem começa: %s(1) ou %s(2) \n", n1, n2);
+        scanf("%d", &comeco);
         int jogadas = 0;
         int venceu = 0;
         char a = '1';
